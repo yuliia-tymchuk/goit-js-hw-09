@@ -26,7 +26,7 @@ const options = {
     chooseDate = selectedDates[0].getTime();
     const delta = chooseDate - Date.now();
     if (delta <= 0) {
-      Notify.failure('Qui timide rogat docet negare', {
+      Notify.failure('Please choose a date in the future', {
         position: 'center-center',
         clickToClose: true,
       });
